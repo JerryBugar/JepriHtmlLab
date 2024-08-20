@@ -1,0 +1,185 @@
+<html>
+<head>
+    <title>About Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            background-color: #9d9d9d;
+            display: flex; /* Menggunakan flexbox untuk tata letak */
+            justify-content: center; /* Pusatkan menu */
+        }
+        li {
+            margin: 0 15px; /* Jarak antar item */
+        }
+        li a {
+            text-decoration: none;
+            color: white;
+            padding: 14px 20px;
+            display: inline-block;
+            border-radius: 5px; /* Sudut membulat */
+            transition: background-color 0.3s; /* Efek transisi */
+        }
+        li a:hover {
+            background-color: #9d9d9d; /* Warna latar belakang saat hover */
+        }
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #9d9d9d;
+            color: white;
+            text-align: center; /* Pusatkan teks footer */
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 50px 0;
+            background-color: #f4f4f4;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .content .card {
+            background: white; /* Latar belakang putih untuk konten */
+            border-radius: 8px; /* Sudut membulat */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan */
+            margin: 20px;
+            padding: 20px; /* Tambahkan padding untuk konten */
+            flex: 1 1 300px;
+            max-width: 300px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative; /* Tetap posisi relatif */
+            overflow: hidden; /* Sembunyikan elemen yang melampaui batas */
+            z-index: 1; /* Pastikan card di atas efek */
+            border: 5px solid transparent; /* Border transparan untuk efek */
+            background-clip: padding-box; /* Pastikan latar belakang tidak menutupi border */
+        }
+        .content .card::before {
+            content: ""; /* Elemen pseudo untuk efek latar belakang */
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: 8px; /* Sudut membulat yang sama */
+            z-index: 0; /* Di belakang konten card */
+            filter: blur(10px); /* Blur untuk efek lembut */
+            opacity: 0.5; /* Ubah opacity agar tidak sepenuhnya menutupi */
+            transition: opacity 0.3s; /* Transisi untuk efek */
+        }
+        .content .card:hover::before {
+            opacity: 1; /* Tampilkan saat hover */
+        }
+        .content .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            animation: gradient-border 1.5s infinite; /* Animasi border */
+        }
+        @keyframes gradient-border {
+            0% {
+                border-image: linear-gradient(45deg, #ff6b6b, #f7d94c, #6bff6b, #6bb3ff) 1;
+            }
+            50% {
+                border-image: linear-gradient(45deg, #6bb3ff, #ff6b6b, #f7d94c, #6bff6b) 1;
+            }
+            100% {
+                border-image: linear-gradient(45deg, #ff6b6b, #f7d94c, #6bff6b, #6bb3ff) 1;
+            }
+        }
+        .content .card img {
+            max-width: 100%;
+            border-radius: 50%;
+        }
+        .content .card h2 {
+            margin: 20px 0 10px;
+            position: relative; /* Pastikan konten tetap di atas efek */
+            z-index: 1; /* Di atas efek latar belakang */
+        }
+        .content .card p {
+            color: #666;
+            position: relative; /* Pastikan konten tetap di atas efek */
+            z-index: 1; /* Di atas efek latar belakang */
+        }
+        .social-media {
+            margin-top: 20px;
+            position: relative; /* Pastikan konten tetap di atas efek */
+            z-index: 1; /* Di atas efek latar belakang */
+        }
+        .social-media a {
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .social-media img {
+            width: 30px;
+            height: 30px;
+            transition: transform 0.3s;
+        }
+        .social-media img:hover {
+            transform: scale(1.2);
+        }
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="BelajarLIUL.html">Home</a></li>
+        <li><a href="Biodatakolom.html">Biodata</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="aboutUs.html">About Us</a></li>
+    </ul>
+    <div class="container">
+        <div class="header">
+            <h1>About Us</h1>
+            <p>Learn more about our team and mission</p>
+        </div>
+        <div class="content">
+            <div class="card">
+                <div style="text-align: center;">
+                    <img src="https://foto.kontan.co.id/KeyLwzhT31ZH9JNawN4HA-DlsHk=/640x360/smart/2023/09/14/1765513602p.jpg" alt="Team Member 1">
+                </div>
+                <h2>Muhammad Jefri Alhakim</h2>
+                <p>Web Developer</p>
+                <div class="social-media">
+                    <a href="https://www.instagram.com/jfri_a.h" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1000px-Instagram_logo_2022.svg.png" alt="Instagram">
+                    </a>
+                    <a href="https://github.com/JerryBugar" target="_blank">
+                        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+                    </a>
+                    <a href="https://open.spotify.com/user/31l4rux6frrv55p7z2w4nabi67tu" target="_blank">
+                        <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2023/05/Spotify_Primary_Logo_RGB_Green.png" alt="Spotify">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <center><p><strong>Copyright &copy; 2024 by Muhammad Jefri Alhakim</strong></p></center>
+    </footer>
+</body>
+</html>
