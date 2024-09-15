@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <title>Login form</title>
+    <link rel="stylesheet" href="loginform.css"> 
+</head>
+
+<body>>
+    <div class="wrapper">
+        <div class="form-wrapper sign-in">
+            <form>
+                <h2>Login</h2>
+                <div class="input-group">
+                    <input type="text" required>
+                    <label for="">Username</label>
+                </div>
+                <div class="input-group">
+                    <input type="password" required>
+                    <label for="">Password</label>
+                </div>
+                <div class="remember">
+                    <label><input type="checkbox">Remember me</label>
+                </div>
+                <button type="submit">Login</button>
+                <div class="signUp-link">
+                    <p>Tidak mempunyai akun? <a href="#" class="signUpBtn-link">Mendaftar</a></p>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-wrapper sign-up">
+            <form>
+                <h2>Sign Up</h2>
+                <div class="input-group">
+                    <input type="text" name="username" required>
+                    <label for="">Username</label>
+                </div>
+                <div class="input-group">
+                    <input type="email" name="email" required>
+                    <label for="">Email</label>
+                </div>
+                <div class="input-group">
+                    <input type="password" name="password" required>
+                    <label for="">Password</label>
+                </div>
+                <div class="remember">
+                    <label><input type="checkbox" name="terms" required>I agree to the terms & conditions</label>
+                </div>
+                <button type="submit">Sign Up</button>
+                <div class="signUp-link">
+                    <p>Sudah Mempunyai aku? <a href="#" class="signInBtn-link">Sign In</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="loginform.js"></script>
+    
+</body>
+
+</html>

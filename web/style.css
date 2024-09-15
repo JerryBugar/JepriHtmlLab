@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    background-color: #606060;
+    padding: 3px;
+}
+
+.Header nav a {
+    text-decoration: none; 
+    color: white; 
+}
+
+.Header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Header .nav-center {
+    flex-grow: 1;
+    text-align: center;
+}
+.Header nav img {
+    height: 50px;
+}
+.Header nav h3 {
+    margin: 0;
+    display: inline;
+}
+
+body {
+    font-family: Arial, sans-serif; 
+}
+
+.garis{
+    border: 1px solid black;
+}
+
+.tengah{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+

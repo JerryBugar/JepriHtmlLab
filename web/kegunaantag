@@ -1,0 +1,30 @@
+1. `<header>`: Bagian atas dari dokumen, biasanya berisi judul atau navigasi.
+2. `<nav>`: Bagian navigasi yang berisi tautan ke bagian lain dari dokumen atau situs.
+3. `<main>`: Bagian utama dari konten dokumen.
+4. `<section>`: Bagian dari dokumen yang berisi konten terkait.
+5. `<article>`: Bagian yang berisi konten mandiri, seperti artikel.
+6. `<aside>`: Bagian samping yang berisi konten tambahan atau sidebar.
+7. `<figure>`: Elemen untuk mengelompokkan konten media, seperti gambar.
+8. `<figcaption>`: Keterangan untuk elemen `<figure>`.
+9. `<mark>`: Menyoroti teks.
+10. `<time>`: Menampilkan waktu atau tanggal.
+11. `<progress>`: Menampilkan kemajuan dari suatu proses.
+12. `<meter>`: Menampilkan nilai dalam rentang tertentu.
+13. `<details>`: Menyembunyikan konten yang dapat diperluas.
+14. `<summary>`: Ringkasan dari elemen `<details>`.
+15. `<dialog>`: Menampilkan dialog atau kotak pesan.
+16. `<abbr>`: Menampilkan singkatan dengan keterangan.
+17. `<address>`: Menampilkan informasi kontak.
+18. `<blockquote>`: Menampilkan kutipan blok.
+19. `<hr>`: Garis horizontal untuk memisahkan konten.
+20. `<pre>`: Menampilkan teks dengan format yang dipertahankan.
+21. `<code>`: Menampilkan kode program.
+22. `<form>`: Formulir untuk input pengguna.
+23. `<div>`: Elemen kontainer umum.
+24. `<span>`: Elemen inline untuk konten kecil.
+25. `<a>`: Tautan ke halaman lain.
+26. `<img>`: Menampilkan gambar.
+27. `<table>`: Menampilkan tabel.
+28. `<ul>`: Daftar tidak terurut.
+29. `<ol>`: Daftar terurut.
+30. `<footer>`: Bagian bawah dari dokumen, biasanya berisi informasi hak cipta atau kontak.
